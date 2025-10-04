@@ -1,16 +1,23 @@
-
 const express = require("express");
+
 const app = express();
 
-app.use(express.json());
 
 
-app.use("hello");
 
+app.get('/', (req, res) => {
 
-app.listen(3000,() => {
-    console.log(`Server is running at http://localhost:/`)
+    res.send("welcome to mca");
+
 });
 
+
+
+
+app.listen(3000, () => {
+
+    console.log("server is running : 127.0.0.1:3000");
+
+});
 
 
